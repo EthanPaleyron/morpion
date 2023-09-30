@@ -1,4 +1,4 @@
-# Name Project
+# Morpion
 
 ## Use of [Vite](https://vitejs.dev/), [Sass](https://sass-lang.com/).
 

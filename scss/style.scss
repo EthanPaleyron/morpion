@@ -1,0 +1,103 @@
+body {
+  background-color: rgb(20, 20, 20);
+  color: $w;
+}
+
+h1 {
+  margin-top: 2rem;
+  font-size: 3rem;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+.morpion {
+  margin: 4rem auto;
+  user-select: none;
+  display: grid;
+  grid-template-areas: "a a a";
+  width: fit-content;
+  div {
+    font-size: 4rem;
+    color: $maroon;
+    width: 9rem;
+    height: 9rem;
+    border-right: solid $maroon 0.3rem;
+    border-bottom: solid $maroon 0.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    animation: cellMulticolor 3s ease-out infinite;
+    &:nth-child(3n) {
+      border-right: none;
+    }
+    &:nth-child(6n) ~ div {
+      border-bottom: none;
+    }
+  }
+}
+
+#around {
+  animation: cellMulticolor 3s ease-out infinite;
+}
+
+@keyframes cellMulticolor {
+  13% {
+    color: $r;
+    border-color: $r;
+  }
+  26% {
+    color: $orange;
+    border-color: $orange;
+  }
+  39% {
+    color: $yellow;
+    border-color: $yellow;
+  }
+  52% {
+    color: $lime;
+    border-color: $lime;
+  }
+  65% {
+    color: $blue;
+    border-color: $blue;
+  }
+  78% {
+    color: $fuchsia;
+    border-color: $fuchsia;
+  }
+  91% {
+    color: $purple;
+    border-color: $purple;
+  }
+}
+
+section {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 30rem;
+  color: $db;
+  text-align: center;
+  font-size: 2rem;
+  background-color: $w;
+  padding: 2rem 0;
+  border-radius: 1rem;
+
+  p {
+    margin: 0.5rem 0 2rem;
+  }
+
+  button {
+    font-size: 2rem;
+    color: $w;
+    background-color: $db;
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+  }
+}

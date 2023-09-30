@@ -6,12 +6,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/2621df78fc.js" crossorigin="anonymous"></script>
-  <title>name of the project</title>
+  <title>Morpion</title>
 </head>
 
 <body>
 
-  <h1>Hello World</h1>
+  <div class="blurring">
+    <h1>Morpion</h1>
+
+    <div class="morpion">
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+    </div>
+
+    <h2>Around player: <span id="around">X</span></h2>
+  </div>
+
+  <section>
+    <h2>Part finished</h2>
+    <p id="endGame"></p>
+    <button id="replay">Replay!</button>
+  </section>
 
   <script type="module" src="/js/main.js"></script>
 </body>
