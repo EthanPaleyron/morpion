@@ -26,7 +26,7 @@ function playGame(e) {
     document.querySelector(".blurring").style.filter = "blur(0.3rem)";
     document.querySelector("section").style.display = "block";
   } else if (draw()) {
-    endGame.innerText = "drawn game :'(";
+    endGame.innerText = "Equality :'(";
     document.querySelector(".blurring").style.filter = "blur(0.3rem)";
     document.querySelector("section").style.display = "block";
   }
